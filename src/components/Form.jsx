@@ -9,6 +9,11 @@ const SumForm = () => {
   const sumNumbers = (event) => {
     event.preventDefault();
 
+    if (isNaN(firstNum) || isNaN(secondNum)) {
+      setSumValue('You must only use numbers');
+      return;
+    }
+
     setSumValue(Number(firstNum) + Number(secondNum));
   };
 
@@ -19,19 +24,17 @@ const SumForm = () => {
       </Grid>
       <Grid item xs={12}>
         <TextField
-          aria-label="first number"
+          label="first number"
           placeholder="First number"
           defaultValue={firstNum}
-          type="number"
           onChange={(e) => setFirstNum(e.target.value)}
         />
       </Grid>
       <Grid item xs={12}>
         <TextField
-          aria-label="second number"
+          label="second number"
           placeholder="Second number"
           defaultValue={secondNum}
-          type="number"
           onChange={(e) => setSecondNum(e.target.value)}
         />
       </Grid>

@@ -1,5 +1,4 @@
-import "./App.css";
-import { SumForm } from "./components";
+import { SumForm } from './components';
 
 export default function App() {
   return (
