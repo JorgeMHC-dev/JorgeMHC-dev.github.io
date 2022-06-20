@@ -7,6 +7,7 @@
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
     "@mui/material": "5.8.4",
+    "@mui/x-data-grid": "5.12.2",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",
     "@testing-library/user-event": "13.5.0",
@@ -48,5 +49,11 @@
     "gh-pages": "4.0.0",
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testEnvironment": "jsdom"
   }
 }

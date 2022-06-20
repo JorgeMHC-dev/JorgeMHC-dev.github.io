@@ -1,18 +1,18 @@
-import App from './App';
+import { Form } from './Form';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 
 describe('App tests', () => {
   it('should display header title', () => {
-    render(<App />);
+    render(<Form />);
     const Header = screen.getByRole('heading', { name: 'Suma de valores' });
 
     expect(Header).toBeInTheDocument();
   });
 
   it('should display the result of the addition', async () => {
-    render(<App />);
+    render(<Form />);
     const FirstInput = screen.getByLabelText('first number');
     const SecondInput = screen.getByLabelText('second number');
 
@@ -24,7 +24,7 @@ describe('App tests', () => {
   });
 
   it('should validate input numbers', () => {
-    render(<App />);
+    render(<Form />);
     const FirstInput = screen.getByLabelText('first number');
     const SecondInput = screen.getByLabelText('second number');
 
