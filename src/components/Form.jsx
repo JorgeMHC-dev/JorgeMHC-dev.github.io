@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, TextField, Grid } from '@mui/material';
 
-const SumForm = () => {
+const Form = () => {
   const [firstNum, setFirstNum] = useState(null);
   const [secondNum, setSecondNum] = useState(null);
   const [sumValue, setSumValue] = useState(null);
@@ -50,4 +50,4 @@ const SumForm = () => {
   );
 };
 
-export { SumForm };
+export { Form };

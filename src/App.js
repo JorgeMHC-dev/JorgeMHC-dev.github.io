@@ -1,9 +1,9 @@
-import { SumForm } from './components';
+import { Agenda } from './components';
 
 export default function App() {
   return (
     <div className="App">
-      <SumForm />
+      <Agenda />
     </div>
   );
 }
