@@ -127,6 +127,9 @@ const Agenda = () => {
                           id="selectAll"
                           onClick={handleSelectAll}
                           checked={isCheckAll}
+                          inputProps={{
+                            'aria-label': 'Select all checkbox',
+                          }}
                         />
                       </TableCell>
                       <TableCell align="right">Name</TableCell>
@@ -142,6 +145,9 @@ const Agenda = () => {
                             id={contact.phoneNumber}
                             onClick={handleClick}
                             checked={isCheck.includes(contact.phoneNumber)}
+                            inputProps={{
+                              'aria-label': `${contact.name} checkbox`,
+                            }}
                           />
                         </TableCell>
                         <TableCell align="right">{contact.name}</TableCell>
