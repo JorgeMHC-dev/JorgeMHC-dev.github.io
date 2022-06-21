@@ -4,6 +4,12 @@ import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 
 describe('App tests', () => {
+  it('renders correctly', () => {
+    const { container } = render(<Form />);
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('should display header title', () => {
     render(<Form />);
     const Header = screen.getByRole('heading', { name: 'Suma de valores' });

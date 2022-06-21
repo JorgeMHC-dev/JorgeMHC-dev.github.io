@@ -1,9 +1,9 @@
-import { Agenda } from './components';
+import { PokeList } from './components';
 
 export default function App() {
   return (
     <div className="App">
-      <Agenda />
+      <PokeList />
     </div>
   );
 }
